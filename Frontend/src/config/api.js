@@ -1,0 +1,1 @@
+export const API_BASE_URL= "https://premier-backend-1034347917411.asia-south1.run.app"
