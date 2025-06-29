@@ -16,11 +16,7 @@ public class CorsConfig {
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")
-                        .allowedOrigins(frontendUrl)
-                        .allowedMethods("GET");
-            }
+            public void addCorsMappings(CorsRegistry registry) {registry.addMapping("/api/**").allowedOrigins(frontendUrl).allowedMethods("GET");}
         };
     }
 }

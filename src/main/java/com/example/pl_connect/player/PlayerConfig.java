@@ -11,13 +11,8 @@ public class PlayerConfig {
     @Bean
     CommandLineRunner commandLineRunner(PlayerRepository repository) {
         return args -> {
-            Player gabriel = new Player(
-                    "Gabriel"
-            );
-
-            Player alex = new Player(
-                    "Alex"
-            );
+            Player gabriel = new Player("Gabriel");
+            Player alex = new Player("Alex");
         };
     }
 }
