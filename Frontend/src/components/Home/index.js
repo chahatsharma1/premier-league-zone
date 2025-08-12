@@ -14,6 +14,9 @@ const Home = () => {
         const timerId = setTimeout(() => {
           setLetterClass('text-animate-hover');
         }, 4000);
+
+        fetch('https://premier-backend-1034347917411.asia-south1.run.app/actuator/health', { mode: 'no-cors' })
+            .catch(error => console.warn("Backend warm-up ping failed:", error));
       
         return () => {
           clearTimeout(timerId);
